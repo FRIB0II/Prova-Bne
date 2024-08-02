@@ -46,9 +46,11 @@ def Preencher_Lista():
 
     Bubble_Sort(lista_a)
 
+
 # Método principal.
 def Main():
     print("")
     Preencher_Lista()
+
 
 Main()

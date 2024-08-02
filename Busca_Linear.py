@@ -1,31 +1,27 @@
 # Método que busca os valores na lista.
-def Pesquisar(vetor_a, valor):
-    posicao = 0
-    for contador in range(len(vetor_a)):
-        if vetor_a[contador] == valor:
+def Pesquisar(vet, n):
+    tamanho_vet = len(vet)
+    posicao = -1
+
+    for contador in range(0, tamanho_vet):
+        if vet[contador] == n:
             posicao = contador
             break
-        else:
-            pass
     
-    if posicao != "":
-        print(f"O número {valor} já existe no vetor. Ele está na {posicao+1}º posição.")
+    if posicao != -1:
+        print(f"O número {n} existe no vetor. Ele está na {posicao+1}º posição.")   
+    else:     
+        print(f"O valor {n} não foi encontrado no vetor.")
         print("Tente novamente.")
-        print("")
-        Completar_Valor()   
-    elif posicao == "":     
-        print(f"O valor {valor} não foi encontrado no vetor.")
-        print("")
-        Completar_Valor()
+
+    Main()
 
 
-
+# Método de entrada do valor a ser buscado
 def Completar_Valor():
-    vetor_a = [9, 7, 2, 16, 14, 32]
-
-    valor = int(input("Digite um valor para buscar no vetor: "))
-
-    Pesquisar(vetor_a, valor)
+    vet = [9, 7, 2, 16, 14, 32]
+    n = int(input("Digite um valor para buscar no vetor: "))
+    Pesquisar(vet, n)
 
 
 # Método principal.

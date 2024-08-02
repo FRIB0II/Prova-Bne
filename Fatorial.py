@@ -19,20 +19,21 @@ def Calcula_FAT():
     print("FAT =", end=" ")    
 
     while contador < 10:
+        if fatorial == 10:
+            print(f"({dividendo} / {fatorial}!)")
+            break
+
         resultado = Calcula_Fatorial(fatorial)
         fat = fat + (dividendo / resultado)
 
         print(f"({dividendo} / {fatorial}!)", end=" + ")
-        
-        if fatorial == 10:
-            print(f"({dividendo} / {fatorial}!)")
 
         fatorial += 1
         dividendo += 4
         contador += 1
 
     print("")
-    print(f"A soma FAT é {round(fat, 2)}. E o termo faltante é {dividendo - 4}.")
+    print(f"A soma FAT é {round(fat, 2)}. E o termo faltante é {dividendo}.")
     print("")
 
 
@@ -40,5 +41,6 @@ def Calcula_FAT():
 def Main():
     print("")
     Calcula_FAT()
+
 
 Main()
