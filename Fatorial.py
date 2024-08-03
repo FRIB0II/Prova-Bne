@@ -5,7 +5,6 @@ def Calcula_Fatorial(fatorial):
     while contador <= fatorial:
         resultado_fatorial = resultado_fatorial * contador 
         contador += 1
-
     return resultado_fatorial
 
 

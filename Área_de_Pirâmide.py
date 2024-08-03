@@ -13,7 +13,7 @@ def Piramide_Quadrada():
     area_total = area_base + area_faces_totais
 
     print("")
-    print(f"A área total dessa pirâmide é: {area_total:.2f} milímetros cúbicos.")
+    print(f"A área total dessa pirâmide é: {area_total:.2f} milímetros quadrados.")
 
 
 # Método principal.
